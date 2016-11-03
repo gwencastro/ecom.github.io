@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Heroic Features - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    .jumbotron{
+        background-image: url(sfwp.png);
+        background-position: center center;
+    }
+    </style>
+    <script>
+    function whoYou(){
+
+        var fname = document.getElementById("name").value;
+        var age = document.getElementById("age").value;
+        var addr = document.getElementById("address").value;
+        var cn = document.getElementById("contact").value;
+        var em = document.getElementById("email").value;
+        if(document.getElementById("btn1").checked){
+            var itemr=document.getElementById("btn1").value;
+        }else if(document.getElementById("btn2").checked){
+            var item=document.getElementById("btn2").value;
+        }else if(document.getElementById("btn3").checked){
+            var item=document.getElementById("btn3").value;
+        }
+        else if(document.getElementById("btn4").checked){
+            var item=document.getElementById("btn4").value;
+        }
+        else if(document.getElementById("btn5").checked){
+            var item=document.getElementById("btn5").value;
+        }
+        else if(document.getElementById("btn6").checked){
+            var item=document.getElementById("btn6").value;
+        }
+        else if(document.getElementById("btn7").checked){
+            var item=document.getElementById("btn7").value;
+        }
+        else{
+            var item=document.getElementById("btn8").value;
+        }
+
+        if (document.getElementById("lol").checked) {
+            alert( "Hello " + fname  + "\nAge: " + age +"\nArcana: "+ item+ "\nAddress " + addr + "\nContact Number " + cn + " and " + "Email " + em +"\nPrice: $20");
+        } else{
+            alert("You need to agree to the terms and conditions")
+        }
+
+    } 
+        
+        
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>-->
+                <a class="navbar-brand" href="#">ARCANA SHOP </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>-->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Jumbotron Header -->
+        <header class="jumbotron hero-spacer">
+            <h1 style="color:white;">A Warm Welcome!</h1>
+            <p style="color:white;">ALL DOTA2 ARCANA FOR $20 ONLY<br/>
+            you can only buy aracana once</p>
+            <!--<p><a class="btn btn-primary btn-large">Call to action!</a>
+            </p>-->
+        </header>
+
+        <hr>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Choose your Arcana</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Page Features -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="lina.png" alt="">
+                    <div class="caption">
+                        <h3>Fiery Soul of the Slayer</h3>
+                        <p>It has often been said that Lina's hair was touched by fire, though few know the truth of this claim. In Lina's youth, as her natural talents first began to smoke and smolder it was her fiery hair that told the tale of the storm to come. Her skill and control of the flame was enough to suppress the searing display.</p>
+                        <p>
+                            <input type="radio" value="Fiery Soul of the Slayer" id="btn1"/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="legion.png" alt="">
+                    <div class="caption">
+                        <h3>Blades of Voth Domosh</h3>
+                        <p>Set in her vengeance against the abyss, Tresdin approached the baleful armorer Qwyth, who gifted to her these hellbound blades. Though she obtained the swords without cost, she may realize too late that the price extracted for wielding such incredible power could be more than she is willing to part with.</p>
+                        <p>
+                            <input type="radio"  value="Blades of Voth Domosh" id="btn2"/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="terror.png" alt="">
+                    <div class="caption">
+                        <h3>Fractal Horns of Inner Abysm</h3>
+                        <p>Deep in the hell of Hell, Terrorblade lay bound behind fractal walls, sentenced to an eternity of twisted contemplation. He stared long into the reflection of his own worst self. And long did his worst self stare into him. Now they rise together, a single entity more powerful than ever before.</p>
+                        <p>
+                            <input type="radio" value=">Fractal Horns of Inner Abysm" id="btn3"/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="techies.png" alt="">
+                    <div class="caption">
+                        <h3>Swine of the Sunken Galley</h3>
+                        <p>After months of work, Techies Demolitions proudly unveiled their latest commission: The Swine, the most powerful cannon ever designed. Yet during its first frantic use aboard a homebound galley, the Swine's awesome blast tore its host ship asunder, rocketing the cannon itself backwards toward the shore..</p>
+                        <p>
+                            <input type="radio" value="Swine of the Sunken Galley" id="btn4"/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="sf.png" alt="">
+                    <div class="caption">
+                        <h3>Demon Eater</h3>
+                        <p>Shadow Fiend has long collected the souls of his enemies. As is the case with any collector, some prizes have stood above others, to be sought out at any cost. However, there are certain souls that should not be tried, and forces so dark and filled with rage that no being could hope to contain them.</p>
+                        <p>
+                            <input type="radio" value="Demon Eater" id="btn5"/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="pa.png" alt="">
+                    <div class="caption">
+                        <h3>Manifold Paradox</h3>
+                        <p>With a raspy cackle, the elder smith Craler swung the sword that his family had spent eleven generations to fold and forge. So sharp it was that, with a sound like tearing fabric, a rip in reality tore open. Through this rip, Craler recognized himself from moments before, holding aloft the very same coveted blade.</p>
+                        <p>
+                            <input type="radio" value="Manifold Paradox" id="btn6"/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="cm.png" alt="">
+                    <div class="caption">
+                        <h3>Frost Avalanche</h3>
+                        <p>Some say the garment began as the wedding gown of an ancient queen. Others say it was once a battle cloak of a frost ogre. In truth, the enchanted fabric is as malleable as an avalanche, and can mold itself into various forms. This form has attracted a lone wolf pup and become a loyal companion.</p>
+                        <p>
+                            <input type="radio" value="Frost Avalanche" id="btn7"/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="zeus.png" alt="">
+                    <div class="caption">
+                        <h3>Tempest Helm of the Thundergod</h3>
+                        <p>Forged by the Hammers of Celestarr and imbued with the energies of the Ancients, this mighty helm feels at home resting across the brow of the Lord of Heaven himself. The faithless shall tremble as true thunder rolls across the fields of battle!</p>
+                        <p>
+                            <input type="radio" value="Tempest Helm of the Thundergod" id="btn8"/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+        <center><h2>Fill out to buy</h2></center>
+        <form>
+            <div class="left">
+            <p align="center">
+                Name :<br><input type ="text" id="name" style="width:200px; border:1px solid #999999"/><br/>
+                Age : <br><input type ="text" id="age" style="width:200px; border:1px solid #999999"/><br/>
+                Address :<br> <input type="text" id="address" style="width:200px; border:1px solid #999999"/><br/>
+                Contact Number :<br> <input type="text" id="contact" style="width:200px; border:1px solid #999999"/><br/>
+                Email : <br><input type="text" id="email" style="width:200px; border:1px solid #999999"/><br/>
+                <input type="checkbox" name="check" id="lol" >I have agreed to the terms and conditions<br/>
+                <button type="reset" value="Reset">Reset</button>
+                <input type="button" value="Submit" onclick="whoYou();"/>
+            </p>
+            </div>
+        </form>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
